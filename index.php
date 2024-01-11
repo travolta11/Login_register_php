@@ -13,7 +13,7 @@ if($db)
   {
       $username=mysqli_real_escape_string($db,$_POST['username']);
       $password=mysqli_real_escape_string($db,$_POST['password']);
-      $password=md5($password); //Remember we hashed password before storing last time
+      $password=md5($password); 
       $sql="SELECT * FROM users WHERE  username='$username' AND password='$password'";
       $result=mysqli_query($db,$sql);
       
@@ -38,7 +38,7 @@ if($db)
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Rabbani sarkar</title>
+  <title>Lamp project issam</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -50,18 +50,18 @@ if($db)
 
 <div class="container">
   <hgroup>
-    <h1 class="site-title" style="text-align: center; color: green;">Login, Registration, Logout</h1><br>
+    <h1 class="site-title" style="text-align: center; color: green;">Lamp project issam</h1><br>
   </hgroup>
 
 <br>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-  <!-- Collect the nav links, forms, and other content for toggling -->
+ 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center">
         <li><a href="login.php">LogIN</a></li>
         <li><a href="register.php">SignUp</a></li>
-        <li><a href="logout.php">LogOut</a></li>
+        
       </ul>
 
     </div>

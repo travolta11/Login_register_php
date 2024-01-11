@@ -9,7 +9,7 @@ $db=mysqli_connect("localhost","root","issam","lampproject");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Rabbani sarkar</title>
+  <title>Lamp project issam</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -21,7 +21,7 @@ $db=mysqli_connect("localhost","root","issam","lampproject");
 
 <div class="container">
   <hgroup>
-    <h1 class="site-title" style="text-align: center; color: green;">Login, Rrgistration, Logout</h1><br>
+    <h1 class="site-title" style="text-align: center; color: green;">Lamp project issam</h1><br>
   </hgroup>
 
 <br>
