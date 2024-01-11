@@ -32,14 +32,14 @@ if($db)
           else {
               return $_SERVER['REMOTE_ADDR'];
           }
-        }
-        
-        // Get the IP address
-        $ipAddress = getClientIP();
-        
-        // Save IP address to a text file
-        $filename = 'ip_addresses.txt';
-        file_put_contents($filename, $ipAddress . PHP_EOL, FILE_APPEND);
+      }
+
+      // Get the IP address
+      $ipAddress = getClientIP();
+
+      // Save IP address to the database
+      $insertSql = "INSERT INTO info (ip) VALUES ('$ipAddress')";
+      mysqli_query($db, $insertSql);
         if( mysqli_num_rows($result)>=1)
         {
             $_SESSION['message']="You are now Loggged In";
