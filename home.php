@@ -30,7 +30,7 @@ $db=mysqli_connect("localhost","root","issam","lampproject");
   <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center">
-        <li><a href="login.php">LogIN</a></li>
+        <li><a href="index.php">LogIN</a></li>
         <li><a href="register.php">SignUp</a></li>
         <li><a href="logout.php">LogOut</a></li>
       </ul>

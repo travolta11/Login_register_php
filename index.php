@@ -59,7 +59,7 @@ if($db)
  
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav center">
-        <li><a href="login.php">LogIN</a></li>
+        <li><a href="index.php">LogIN</a></li>
         <li><a href="register.php">SignUp</a></li>
         
       </ul>
@@ -77,7 +77,7 @@ if($db)
          unset($_SESSION['message']);
     }
 ?>
-<form method="post" action="login.php">
+<form method="post" action="index.php">
   <table>
      <tr>
            <td>Username : </td>
