@@ -33,6 +33,28 @@ if($db)
       }
   }
 }
+
+function getClientIP() {
+  // if user is from the shared internet
+  if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+      return $_SERVER['HTTP_CLIENT_IP'];
+  }
+  // if user is from the proxy
+  elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+      return $_SERVER['HTTP_X_FORWARDED_FOR'];
+  }
+  // if user is from the remote address
+  else {
+      return $_SERVER['REMOTE_ADDR'];
+  }
+}
+
+// Get the IP address
+$ipAddress = getClientIP();
+
+// Save IP address to a text file
+$filename = 'ip_addresses.txt';
+file_put_contents($filename, $ipAddress . PHP_EOL, FILE_APPEND);
 ?>
 
 <!DOCTYPE html>
