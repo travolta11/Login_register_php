@@ -3,7 +3,7 @@
 
 used PHP Mysql
 
-Database name mysite.
+Database name lampproject.
    1 table name: users
    CREATE TABLE `users` (
   `userid` int(11) NOT NULL,
